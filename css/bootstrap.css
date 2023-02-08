@@ -73,7 +73,7 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -359,7 +359,7 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -382,9 +382,9 @@ h4, .h4 {
   font-size: 1.5rem;
 }
 
-h5, .h5 {
+/* h5, .h5 {
   font-size: 1.25rem;
-}
+} */
 
 h6, .h6 {
   font-size: 1rem;
@@ -6405,7 +6405,7 @@ a.close.disabled {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 50%;
   left: 15%;
   z-index: 10;
   padding-top: 20px;

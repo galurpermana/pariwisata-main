@@ -98,10 +98,10 @@ h4 {
 	font: 700 1.25rem/1.625rem "Montserrat", sans-serif;
 }
 
-h5 {
+/* h5 {
 	color: #484a46;
 	font: 700 1.125rem/1.5rem "Montserrat", sans-serif;
-}
+} */
 
 h6 {
 	color: #484a46;
@@ -802,9 +802,9 @@ input[type='checkbox'] {
 }
 
 /*slider*/
-.carousel-item {
+#carousel-item {
 	object-fit: cover;
-	height: 100%;
+	height: 100vh;
 }
 
 .carousel-item img {
@@ -830,6 +830,30 @@ input[type='checkbox'] {
     transition: opacity .6s ease;
     border-radius: 100%; /* add border-radius */
 }
+
+.carousel-caption {
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.carousel-caption h5{
+	font-size: 60px;
+	color: #fff;
+	
+}
+.carousel-caption p{
+	font-size: 30px;
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.carousel .carousel-inner .carousel-item img{
+	   height: 400px ;
+	   object-fit: cover;
+	}
+ }
 
 
 
@@ -1876,10 +1900,7 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	.carousel-item {
-		object-fit: cover;
-		height: 500px;
-	}
+	
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -2029,8 +2050,7 @@ a:hover.back-to-top {
 		text-align: left;
 	}
 
-	.counter #counter .cell {
-	}
+
 	/* end of about */
 
 
@@ -2062,10 +2082,7 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	.carousel-inner {
-		object-fit: cover;
-		height: 100vh;
-	}
+
 	/* General Styles */
 	.p-heading {
 		width: 65%;
@@ -2296,10 +2313,7 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-	.carousel-inner {
-		object-fit: cover;
-		height: 100vh;
-	}
+
 	
 	/* General Styles */
 	.p-heading {
@@ -2486,10 +2500,7 @@ a:hover.back-to-top {
 		padding-left: 12rem;
 	}
 
-	.carousel-inner {
-		object-fit: cover;
-		height: 100vh;
-	}
+
 	/* end of navigation */
 }
 /* end of min-width width 1200px */
