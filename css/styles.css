@@ -802,13 +802,24 @@ input[type='checkbox'] {
 }
 
 /*slider*/
-#carousel-item {
+.carousel-inner .carousel-item img {
 	object-fit: cover;
 	height: 100vh;
 }
 
-.carousel-item img {
+.carousel-item{
 	justify-content: center;
+}
+
+.carousel-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-image: 
+	linear-gradient(180deg, rgba(2,0,36,0.028448879551820738) 0%, rgba(255,255,255,1) 100%);
+	width: 100vw;
+	bottom: 0;
+	height: 150px;
 }
 
 .carousel-indicators li {
@@ -819,6 +830,7 @@ input[type='checkbox'] {
     padding: 0;
     margin-right: 3px;
     margin-left: 3px;
+	margin-bottom: 150px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #fff;
@@ -831,29 +843,39 @@ input[type='checkbox'] {
     border-radius: 100%; /* add border-radius */
 }
 
+
+
+@media only screen and (min-width:960px){
+	.carousel-indicators li{
+		margin-bottom: 100px;;
+	}
+}
+
 .carousel-caption {
-	vertical-align: middle;
+	top: 30%;
 	text-align: center;
-	line-height: 1.5;
+
 }
 
 .carousel-caption h5{
 	font-size: 60px;
 	color: #fff;
-	
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .carousel-caption p{
 	font-size: 30px;
 	color: #fff;
+	margin-bottom: 100px;
 }
 
-
+/* 
 @media only screen and (max-width: 1200px) {
 	.carousel .carousel-inner .carousel-item img{
 	   height: 400px ;
 	   object-fit: cover;
 	}
- }
+ } */
 
 
 
@@ -1914,7 +1936,8 @@ a:hover.back-to-top {
 	.navbar-custom {
 		padding: 2.125rem 1.5rem 2.125rem 2rem;
 		box-shadow: none;
-        background: rgba(17, 52, 72, 0.5);
+        background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,0.028448879551820738) 0%, rgba(17,52,72,1) 100%);
 	}
 	
 	.navbar-custom .navbar-brand.logo-text {
