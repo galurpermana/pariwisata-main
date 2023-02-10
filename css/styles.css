@@ -806,7 +806,9 @@ input[type='checkbox'] {
 .carousel-inner .carousel-item img {
 	object-fit: cover;
 	height: 100vh;
+	
 }
+
 
 .carousel-item{
 	justify-content: center;
