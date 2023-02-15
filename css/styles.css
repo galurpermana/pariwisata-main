@@ -866,7 +866,6 @@ input[type='checkbox'] {
 .carousel-caption {
 	top: 30%;
 	text-align: center;
-
 }
 
 .carousel-caption h5{
@@ -874,6 +873,7 @@ input[type='checkbox'] {
 	color: #fff;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .carousel-caption p{
 	font-size: 30px;
