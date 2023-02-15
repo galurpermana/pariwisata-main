@@ -656,7 +656,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 7.0625rem;
+    width: 9.0625rem;
 	height: 2rem;
 	-webkit-backface-visibility: hidden;
 }
@@ -814,15 +814,17 @@ input[type='checkbox'] {
 	justify-content: center;
 }
 
-.carousel-item::before {
+
+.drk::after {
 	content: '';
 	display: block;
 	position: absolute;
-	background-image: 
-	linear-gradient(180deg, rgba(2,0,36,0.028448879551820738) 0%, rgba(255,255,255,1) 100%);
-	width: 100vw;
-	bottom: 0;
-	height: 150px;
+	top: 20px;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	background: #000;
+	opacity: .5;
 }
 
 .carousel-indicators li {
@@ -867,6 +869,10 @@ input[type='checkbox'] {
 	top: 30%;
 	text-align: center;
 
+}
+
+.container-htl {
+	padding-bottom: 20px;
 }
 
 .carousel-caption h5{
